@@ -61,7 +61,7 @@ class Icecast{
 			"title" : trackFilename,
 			"remixer" : null
 		};
-		var trackFilenameRegEx = /([\w\s\&\,\.]+)\s\-\s([\w\s\&\,\.]+)(?:\s)*(\([\w\s\&\,\.]+\))*/gi;
+		var trackFilenameRegEx = /([\w\s\&\,\'\.]+)\s\-\s([\w\s\&\,\'\.]+)(?:\s)*(\([\w\s\&\,\'\.]+\))*/gi;
 		var matchedElements = trackFilenameRegEx.exec(trackFilename);
 
 		if(matchedElements != null){
